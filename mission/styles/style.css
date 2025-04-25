@@ -2,15 +2,21 @@ h1 {
   text-align: center;
   font-size: 40px;
   font-family: 'Times New Roman';
+  margin-top: -15px;
 }
 h2 {
-    display: inline-block;
     margin-bottom: 50px;
     font-size: 20px;
     font-family: 'Times New Roman';
     color: #006EB6;
-    border-bottom: 2px solid #d3d3d3;
     margin-top: -10px;
+}
+.underline {
+    border-bottom: 1px solid #d3d3d3;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: -50px;
+    margin-bottom: 30px;
 }
 body {
     border: 1px solid #D3D3D3;
@@ -24,9 +30,9 @@ body {
 }
 .msg p {
     margin-left: 150px;
-    margin-right: 100px;
+    margin-right: 150px;
     text-align: left;
-
+    font-size: 17px;
 }
 .single-par p{
     text-align: left;
@@ -34,6 +40,7 @@ body {
 }
 .num-paragraph {
     margin-bottom: 50px;
+    font-size: 17px;
 }
 .num-paragraph p {
     text-align: left;
@@ -49,4 +56,5 @@ footer {
 }
 footer img {
     max-width: 150px;
+    margin-bottom: -25px;
 }

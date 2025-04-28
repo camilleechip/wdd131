@@ -5,24 +5,19 @@ h1 {
   margin-top: -15px;
 }
 h2 {
-    margin-bottom: 50px;
     font-size: 20px;
     font-family: 'Times New Roman';
     color: #006EB6;
     margin-top: -10px;
-}
-.underline {
-    border-bottom: 1px solid #d3d3d3;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-top: -50px;
-    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3em;
 }
 body {
     border: 1px solid #D3D3D3;
     padding: 40px;
     margin: 40px;
     text-align: center;
+    background-color: white;
 }
 .home-page {
     padding: 20x;
@@ -57,4 +52,15 @@ footer {
 footer img {
     max-width: 150px;
     margin-bottom: -25px;
+}
+body.dark {
+    background-color: #333;
+    color: white;
+}
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.dark h2 {
+    color: #80C8F2;
 }

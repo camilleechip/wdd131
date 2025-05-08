@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 :root {
 --primary-color: #52489c;
 --secondary-color: #59c3c3;
@@ -25,16 +25,30 @@ h1 {
     margin-bottom: 30px;
 }
 .main-nav {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-size: 1.5rem;
     font-family: var(--primary-font);
 }
-.main-nav a {
-    margin-right: 30px;
+
+.main-nav button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-light);
+
 }
 a:link,
 a:visited {
     color: var(--text-light);    
+}
+.menu-button {
+    display: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 h2 {
     text-align: center;
@@ -64,4 +78,59 @@ footer {
     border: 2px solid var(--primary-color);
     margin-top: 30px;
     padding-left: 50px;
+}
+@media (max-width: 600px) {
+    .menu-button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links.show {
+        display: flex;
+
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+
+    }
+}
+@media (min-width: 700px) {
+        .menu-button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links.show {
+        display: flex;
+
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 100px) {
+    .menu-button {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

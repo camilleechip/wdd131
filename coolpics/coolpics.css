@@ -71,6 +71,7 @@ img {
     width: 250px;
     border: 8px solid var(--text-light);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 10);
+    cursor: pointer;
 }
 footer {
     background-color: var(--primary-color);
@@ -99,6 +100,7 @@ footer {
         grid-template-columns: 1fr;
 
     }
+
 }
 @media (min-width: 700px) {
         .menu-button {
@@ -119,6 +121,7 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
+
 }
 @media (min-width: 1000px) {
     .menu-button {
@@ -133,4 +136,23 @@ footer {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+}
+dialog img {
+    width: 90%;
+    max-height: 100%;
+    margin: 20vh auto;
+    object-fit: contain;
+}
+.close-viewer {
+   position: absolute; 
+   top: 20vh;
+   right: 10px;
+   cursor: pointer;
 }

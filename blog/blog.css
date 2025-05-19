@@ -1,0 +1,67 @@
+:root {
+--primary-color: #AF1B3F;
+--secondary-color: #EFC69B;
+--accent-color: #473144;
+--primary-font: 'Lora', Impact, serif;
+--secondary-font: Helvetica, Arial, sans-serif;
+}
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+}
+.skiptocontent a:focus {
+    top: 10px;
+    outline: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+.header {
+    display: grid;
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+h1 {
+    text-align: center
+}
+.main-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 120px;
+    font-family: var(--primary-font);
+    border: 2px solid var(--secondary-color);
+}
+.main-nav a {
+    color: var(--primary-color);
+}
+.main-nav ul {
+    display: grid;
+    grid-template-columns: 80px 100px 80px;
+    justify-content: end;
+    justify-items:end;
+    list-style: none;
+    gap: 30px;
+    font-size: 1em;
+}
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.first-block {
+    font-family: var(--secondary-font);
+    font-size: 1.3em;
+}
+.second-block h2{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+}
+.second-block p {
+    font-size: 1.3em;
+    font-family: var(--secondary-font);
+}
+.filter-block {
+    font-family: var(--secondary-font);
+    font-size: 1.3em;
+}

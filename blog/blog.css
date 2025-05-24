@@ -22,14 +22,15 @@
     margin-top: 20px;
 }
 h1 {
-    text-align: center
+    text-align: center;
 }
 .main-nav {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-right: 120px;
     font-family: var(--primary-font);
-    border: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 .main-nav a {
     color: var(--primary-color);
@@ -40,7 +41,7 @@ h1 {
     justify-content: end;
     justify-items:end;
     list-style: none;
-    gap: 30px;
+    gap: 15px;
     font-size: 1em;
 }
 .sections {
@@ -49,19 +50,34 @@ h1 {
     justify-items: center;
 }
 .first-block {
+    display: grid;
+    border-right: 2px solid var(--secondary-color);
+    padding-right: 20px;
     font-family: var(--secondary-font);
     font-size: 1.3em;
+    text-align: right;
 }
-.second-block h2{
+.second-block h2,
+.second-block h3 {
     color: var(--primary-color);
     font-family: var(--primary-font);
-    font-size: 1.5em;
+    font-size: 1.9em;
+}
+.first-book,
+.second-book {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 300px;
 }
 .second-block p {
     font-size: 1.3em;
     font-family: var(--secondary-font);
+    margin-bottom: 100px;
 }
 .filter-block {
     font-family: var(--secondary-font);
     font-size: 1.3em;
+    border: 2px solid var(--secondary-color);
+    padding: 20px;
 }

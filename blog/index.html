@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="blog.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <script src="blog.js"></script>
+    <script src="blog.js" defer></script>
   </head>
   <body>
     <div class="skiptocontent">
@@ -26,36 +26,19 @@
         </nav>
     </div>
     <main id="maincontent" class="sections">
-        <section class="first-block">
-            <div class="first-rating">          
-                <p>July 5, 2022</p>
-                <p>10-14</p>
-                <p>Genre: Fantasy</p>
-                <p>Rating: ⭐⭐⭐⭐</p>
-            </div>
-            <div class="second-rating">
-                <p>December 12, 2021</p>
-                <p>12-16</p>
-                <p>Genre: Fantasy</p>
-                <p>Rating: ⭐⭐⭐⭐ </p>
-            </div>
+        <section class="book-info" id="articles">
+            <article class="book-entry">
+        
+
+            </article>
         </section>
-        <section class="second-block">
-            <h2>Septimus Heap Book One: Magyk</h2>
-            <figure>
-               <img class="first-book" src="images/Magkycover2.jpg" alt="Septimus Heap Book One: Magyk">
-            </figure>
-            <p>'If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.'</p>
-            <h3>Magnus Chase Book One: Sword of Summer</h3>
-            <figure>
-                <img class="second-book" src="images/book-cover.jpg" alt="Magnus Chase Book One: Sword of Summer">
-            </figure>
-            <p>'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman 
-                (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse 
-                Mythology, and the end result is good.'</p>
-        </section> 
+
         <section class="filter-block">
-            <p>Filter form will go here</p>
+            <select id="bookDropdown">
+                <option value="all">-- Choose a Book --</option>
+            </select>
+        <div id="articles"></div>
+
         </section>
     </main>
   </body>

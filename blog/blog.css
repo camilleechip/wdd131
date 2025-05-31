@@ -49,13 +49,30 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 }
+.book-info {
+    grid-column: span 2;
+}
 .first-block {
-    display: grid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.book-rating {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
     border-right: 2px solid var(--secondary-color);
-    padding-right: 20px;
     font-family: var(--secondary-font);
     font-size: 1.3em;
     text-align: right;
+    height: 100%;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.book-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
 }
 .second-block h2,
 .second-block h3 {
@@ -63,17 +80,26 @@ h1 {
     font-family: var(--primary-font);
     font-size: 1.9em;
 }
-.first-book,
-.second-book {
+.second-block {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+}
+.second-block figure {
+    margin-left: 100px;
     display: block;
-    margin: 0 auto;
-    height: auto;
-    width: 300px;
+    max-width: 100;
+    
 }
 .second-block p {
     font-size: 1.3em;
     font-family: var(--secondary-font);
     margin-bottom: 100px;
+}
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .filter-block {
     font-family: var(--secondary-font);
@@ -81,3 +107,4 @@ h1 {
     border: 2px solid var(--secondary-color);
     padding: 20px;
 }
+

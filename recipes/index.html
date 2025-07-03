@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="recipes.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <script src="main.js" defer></script>
-    <script src="recipes.mjs" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
     <div class="main-content">
@@ -30,39 +29,16 @@
     </div>
     <section class="recipe-finder">
         <div class="search-container">
-            <select id="recipeDropdown">
-                <option value="all">Find a recipe</option>
-        </select>
-        <img src="images/search.svg" alt="search icon">
+            <input type="text" id="searchInput" placeholder="Search recipes..." />
+            
+            <img src="images/search.svg" alt="search icon" />
         </div>
     </section>
 
 
     <section class="recipe-section">
-        <article class="recipe-card">
-            <img src="images/sweet-potato-waffle-md.jpg" alt="sweet potato waffles"/>
-
-            <div class="recipe-info">
-                <p class="tag">dessert</p>
-                <h2>Sweet Potato Waffles</h2>
-
-                <div class="ratings-container">
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-      >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <span class="rating-number">(4/5)</span>
-            </div>
-                <p>Savory waffles made with Sweet potato with a hint of Ginger.</p>   
-            </div>
-        </article>
+            <div id="recipe-display"></div>
+        </section>
     </section>
 
     <footer class="footer">
